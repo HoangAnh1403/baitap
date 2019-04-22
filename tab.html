@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/tab.js"></script>
+    <style>
+		body {
+			margin-top: 100px;
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 16px; 
+			line-height: 1.4;
+		}
+
+		.container {
+			width: 800px;
+			margin: 0 auto;
+		}
+
+		.tab-list {
+			padding-bottom: 0;
+			margin: 0;
+		}
+
+		.tab-title {
+			display: inline-block;
+			text-decoration: none;
+			padding: .5rem 1rem;
+			color: #222;
+		}
+
+		.tab-title.active {
+			background: #ededed;
+    		color: #222;
+		}
+
+		.tab-content {
+			background: #ededed;
+			display: none;
+			padding: 1.5rem;
+			color: #4a5666;
+		}
+
+		.show {
+			display: block;
+		}
+
+    </style>
+	</head>
+	
+    <body>
+		<div class="container">
+
+			<div class="tabs">
+				<div class="tab-list">
+					<a class="tab-title active" href="#one">One</a>
+					<a class="tab-title" href="#two">Two</a>
+					<a class="tab-title" href="#three">Three</a>
+				</div>
+			
+				<div id="one" class="tab-content show">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </div>
+			
+				<div id="two" class="tab-content">Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</div>
+			
+				<div id="three" class="tab-content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</div>
+			</div>
+			
+		</div><!-- container -->
+    </body>
+</html> 

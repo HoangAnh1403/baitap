@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/slider.js"></script>
+    <style>
+		body {
+			margin-top: 100px;
+			font-family: Arial, Helvetica, sans-serif; 
+			font-size: 16px; 
+			line-height: 1.4;
+		}
+
+		.container {
+			width: 800px;
+			margin: 0 auto;
+		}
+
+		#slider {
+			position: relative;
+			margin: 20px auto 0 auto;
+			width: 100%;
+		}
+
+		#slider .slides-list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position:relative; 
+			top: 0;
+			left: 0;
+		}
+
+		#slider .slides-list li {
+			float:left;
+			width: 100%;
+		}
+
+		#slider .slides-list li img {
+			display: block;
+			margin: 0;
+			padding: 0;
+			width: 800px;
+		}
+
+		a.control_prev, a.control_next {
+			position: absolute;
+			top: 40%;
+			z-index: 999;
+			display: block;
+			padding: 4% 3%;
+			width: auto;
+			height: auto;
+			background: #2a2a2a;
+			color: #fff;
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 18px;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+
+		a.control_prev:hover, a.control_next:hover {
+			opacity: 1;
+			-webkit-transition: all 0.2s ease;
+		}
+
+		a.control_prev {
+			border-radius: 0 2px 2px 0;
+		}
+
+		a.control_next {
+			right: 0;
+			border-radius: 2px 0 0 2px;
+		}
+
+		ul.triggers { position:absolute; top:310px; left:80px; }
+			ul.triggers li { 
+				float:left; margin:0 5px; font: bold 16px arial; cursor:pointer;
+				background-color:#ccc; color:#000; padding:10px;
+			}ul.triggers li.selected {background-color:red; color:#000;}
+
+
+		.control {position:absolute; top: 380px; color:#fff; cursor:pointer;}
+
+		.slide-container { float:left; width:800px; height:400px; overflow:hidden; border: solid 1px red;   }
+
+    </style>
+	</head>
+	
+    <body>
+		<div class="container">
+
+				<div id="slider">
+					<div class="slide-container">
+
+						<ul class="slides-list">
+							<li class="slide"><img src="images/slider/img-1.jpg" alt="Slider img 1" ></li>
+							<li class="slide"><img src="images/slider/img-2.jpg" alt="Slider img 2" ></li>
+							<li class="slide"><img src="images/slider/img-3.jpg" alt="Slider img 3" ></li>
+						</ul>
+				
+					</div>
+					<div class="arrows">
+						<a href="#" class="control_next">></a>
+						<a href="#" class="control_prev"><</a>
+					</div>
+					
+					<ul class="triggers">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+
+				</div>
+
+				
+			
+		</div><!-- container -->
+    </body>
+</html> 
